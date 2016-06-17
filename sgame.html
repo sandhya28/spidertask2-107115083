@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SpiderTask2-PingPongGame</title>
+	<style>
+		
+		canvas
+		{
+			margin-left: 260px;
+			border : 1px solid black;
+			background: #333;
+		}
+		
+		#instructions
+			{	
+				margin-left: 260px;
+				font-family: "Comic Sans MS";
+				font-size: 17 px; 
+			}
+
+		#disp
+			{
+				margin-left:  580px;
+				margin-top: 4px;
+				margin-right: 900px;
+			}
+		
+		#replay
+			{	
+				margin-top: 50px;
+				background-color: green;
+    			color: white;
+    			padding: 1vw 3vw;
+    			text-align: center;
+    			border: none;
+    			border-radius: 10px;
+    			font-style: "Comic Sans MS";
+    	    	font-size: 20px;
+    			cursor: pointer;
+			}
+	</style>
+</head>
+<body onload = "startgame()">
+<div id = "disp"><input type = "button" id = "replay" value = "REPLAY" onclick = "newgame()"></div>
+<p id="instructions">
+	1.Position of the inactive paddle becomes random after each hit.<br><br>
+	2.After every hit on a paddle the score increases by 1 and control shifts to the next paddle.<br><br>
+	3.Score is based on the no. of hits on the paddle to keep the ball on the board.<br><br>
+	4.Note that the speed of the ball keeps increasing along with the score.<br><br>
+	5.Press SPACEBAR to 'pause' and 'resume'.
+</p>
+<script type="text/javascript" src="sgame.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+</body>
+</html>
